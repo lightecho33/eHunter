@@ -2,6 +2,10 @@ type SupportedLang = 'cn' | 'en' | 'jp'
 
 const versionNotesTemplate: Record<SupportedLang, string> = {
     cn: `
+### v3.1.1 说明
+* 修复图片持续加载失败时，自动重试超过次数限制的问题
+* 修复没有独立原图链接时的原图加载，改为使用页面图片
+
 ### v3.1.0 说明
 * 新增放大镜功能（滚动模式：鼠标左键点击图片打开，书页模式：屏幕中间区域点击图片打开）
 * 支持快捷键自定义（入口：更多设置）
@@ -20,6 +24,10 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 * 使用指南: [链接](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_cn.md)
 `,
     en: `
+### v3.1.1 Notes
+* Fixed automatic image retries continuing beyond the attempt limit
+* Fixed original-image loading when no separate original link exists by using the page image
+
 ### v3.1.0 Notes
 * Added a magnifier feature (Scroll Mode: left-click an image to open; Book Mode: click an image in the center area of the screen to open)
 * Added customizable keyboard shortcuts (entry: More Settings)
@@ -38,6 +46,10 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 * Guide: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_en.md)
 `,
     jp: `
+### v3.1.1 リリースノート
+* 画像の読み込み失敗時に、自動再試行が回数上限を超えて続く問題を修正
+* 個別のオリジナル画像リンクがない場合は、ページ内の画像を読み込むよう修正
+
 ### v3.1.0 リリースノート
 * 拡大鏡機能を追加（スクロールモード: 画像を左クリックで起動、ブックモード: 画面中央エリアの画像をクリックで起動）
 * ショートカットキーのカスタマイズに対応（入口: 「詳細設定」）

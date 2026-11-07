@@ -76,8 +76,8 @@ constructor(html) {
     }
 
     getOriginalImgUrl(): string {
-        let items = this.html.querySelector('#i6')!.children
-        return items[items.length - 1].children[1]!.getAttribute('href')!
+        const originalUrl = this.html.querySelector('#i6 a[href*="fullimg.php"]')?.getAttribute('href')
+        return originalUrl || this.getImgUrl()
     }
 
     getSourceId(): string {
